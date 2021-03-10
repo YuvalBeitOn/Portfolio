@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react'
 import './Projects.scss'
+import Socials from '../Socials/Socials'
 import tasku from '../../assets/img/app-img/tasku.png';
 import musix from '../../assets/img/app-img/musix.png';
 import appsus from '../../assets/img/app-img/appsus.png';
@@ -52,6 +53,7 @@ class Projects extends Component {
 
         return (
             <section className="projects flex column align-center">
+                <Socials></Socials>
                 <div className="header flex justify-center align-center">
                     <div className="blue-square"></div>
                     <h2>Projects</h2>

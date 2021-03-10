@@ -2,8 +2,6 @@
 import React, { Component } from 'react'
 import './Contact.scss'
 import emailjs from 'emailjs-com'
-import apiKeys from '../../api-keys'
-
 class Contact extends Component {
 
     state = {

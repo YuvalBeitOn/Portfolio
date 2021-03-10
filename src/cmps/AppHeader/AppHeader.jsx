@@ -25,9 +25,9 @@ class _AppHeader extends Component {
                         <NavLink to="/projects" activeClassName="active-page" exact>
                             <span name="Portfolio">PROJECTS</span>
                         </NavLink>
-                        <NavLink to="/contact" activeClassName="active-page" exact>
+                        {/* <NavLink to="/contact" activeClassName="active-page" exact>
                             <span name="Contact">CONTACT</span>
-                        </NavLink>
+                        </NavLink> */}
                     </nav>
                 </div>
             </header>

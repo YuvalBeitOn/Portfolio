@@ -1,7 +1,7 @@
 import HomePage from './cmps/HomePage/HomePage';
 import About from './cmps/About/About';
 import Projects from './cmps/Projects/Projects';
-import Contact from './cmps/Contact/Contact';
+// import Contact from './cmps/Contact/Contact';
 
 const Routes = [
     {
@@ -16,10 +16,10 @@ const Routes = [
         path: '/projects',
         component: Projects
     },
-    {
-        path: '/contact',
-        component: Contact
-    }
+    // {
+    //     path: '/contact',
+    //     component: Contact
+    // }
 ]
 
 export default Routes

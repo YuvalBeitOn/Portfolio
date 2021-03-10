@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react'
 import { NavLink, withRouter } from 'react-router-dom';
-
+import CV from '../../assets/Yuval Beit-On CV.docx'
 import './HomePage.scss'
 import me from '../../assets/img/profile.jpg'
 class _HomePage extends Component {
@@ -33,7 +33,8 @@ class _HomePage extends Component {
                         <p className="hello">Hello</p>
                         <p className="sec-p">Here's who I am & what I do</p>
                         <div className="btns-container">
-                            <button className="btn resume">RESUME</button>
+
+                            <button className="btn resume"><a  href={CV} download="Yuval Beit On CV">RESUME</a></button>
                             <button className="btn projects">PROJECTS</button>
                         </div>
                         <NavLink className="flex align-center" to="/about" activeClassName="active-page" exact>

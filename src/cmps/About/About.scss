@@ -10,7 +10,6 @@
   height: 100%;
 
   .header {
-    padding-top: 50px;
     margin-bottom: 30px;
     .blue-square {
       width: 20px;
@@ -45,6 +44,21 @@
         &.skills {
           text-transform: capitalize;
         }
+      }
+    }
+  }
+
+  .socials-cmp {
+    align-self: flex-end;
+    margin: 35px 20px 0 0;
+    a {
+      margin: 0 15px;
+      font-size: 25px;
+      height: 30px;
+      transition: all ease-in-out .2s;
+      &:hover {
+        transform: scale(1.05);
+        color: white;
       }
     }
   }
