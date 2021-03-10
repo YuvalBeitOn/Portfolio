@@ -1,0 +1,47 @@
+@import "../../assets/scss/setup/mixins";
+@import "../../assets/scss/setup/variables";
+@import "../../assets/scss/basics/typography";
+
+.app-header {
+  height: 100px;
+  background-color: white;
+  padding: 20px;
+  .left-side {
+    .blue-square {
+      width: 16px;
+      height: 16px;
+      background-color: rgb(0, 80, 255);
+      margin-right: 8px;
+    }
+
+    h1 {
+      font-family: avenir-bold;
+      font-size: rem(25px);
+      margin-right: 30px;
+    }
+
+    p {
+      font-family: avenir-thin;
+      font-size: rem(17px);
+      letter-spacing: 1px;
+      width: 200px;
+      line-height: 25px;
+    }
+  }
+
+  .right-side {
+    nav {
+      a {
+        font-family: avenir-thin;
+        font-size: rem(14px);
+        letter-spacing: 0.5px;
+      }
+      > *:not(:last-child) {
+        margin-right: 12px;
+      }
+      .active-page {
+        color: rgb(0, 80, 255);
+      }
+    }
+  }
+}
