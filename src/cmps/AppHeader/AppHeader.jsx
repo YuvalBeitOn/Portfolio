@@ -19,7 +19,7 @@ class _AppHeader extends Component {
             <header className="app-header flex space-between align-center">
                 <div className="left-side flex align-center">
                     <div className="blue-square"></div>
-                    <h1>Yuval Beit On</h1>
+                    <h1><a href="/">Yuval Beit On</a></h1>
                     <p>/ FullStack | Frontend Developer</p>
                 </div>
                 <div className="right-side">

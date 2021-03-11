@@ -70,7 +70,7 @@
         font-size: 17px;
         text-align: center;
         letter-spacing: 3px;
-        max-width: 220px;
+        width: 220px;
         line-height: 25px;
       }
 
@@ -94,6 +94,9 @@
 
     .left-side {
       margin-left: 30px;
+      @include for-normal-layout {
+        margin-left: 20px;
+      }
       @include for-narrow-layout {
         justify-content: center;
         align-items: center;
@@ -131,30 +134,28 @@
           width: 130px;
           border-radius: 25px;
           border: 1px solid black;
-          padding: 8px 12px;
           outline: none;
           transition: all ease-in-out 0.3s;
           @include for-tablet-layout {
-            width: 100px;
             font-size: 13px;
           }
           @include for-narrow-layout {
-            width: 120px;
             font-size: 14px;
           }
 
-          &.resume, &.projects  {
+          &.resume {
             background-color: rgb(0, 80, 255);
             border: 1px solid transparent;
-            // color: white;
-            margin-right: 10px;
+            margin-right: 5px;
+            padding: 8px 30px;
             @include for-tablet-layout {
-              margin-right: 5px;
+              padding: 8px 25px;
             }
-            @include for-narrow-layout {
-              margin-right: 10px;
 
+            span {
+              width: 130px;
             }
+            
             &:hover {
               background-color: transparent;
               border: 1px solid black;
@@ -172,10 +173,14 @@
             font-family: avenir-reg;
             background-color: transparent;
             border: 1px solid #212121;
-            a {
-              font-size: 14px;
-              color: #212121;
+            margin-left: 5px;
+            font-size: 14px;
+            color: #212121;
+            padding: 8px 22.5px;
+            @include for-tablet-layout {
+              padding: 8px 19px;
             }
+
             &:hover {
               font-family: avenir-semibold;
               background-color: rgb(0, 80, 255);
@@ -186,7 +191,7 @@
         }
       }
 
-      a {
+      .to-about {
         font-family: avenir-reg;
         color: rgb(0, 80, 255);
         transition: all ease-in-out 0.3s;
