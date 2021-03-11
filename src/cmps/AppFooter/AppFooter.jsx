@@ -11,7 +11,7 @@ class AppFooter extends Component {
                 <div className="contact flex">
                     <div className="call flex column align-center">
                         <span>Call</span>
-                        <p> +972 508880050</p>
+                        <p> +972508880050</p>
                     </div>
                     <div className="write flex column align-center">
                         <span>Write</span>

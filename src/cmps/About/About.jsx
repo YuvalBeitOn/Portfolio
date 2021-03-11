@@ -8,7 +8,7 @@ class About extends Component {
 
     render() {
         return (
-            <section className="about-me flex column justify-center align-center">
+            <section className="about-page flex column justify-center align-center">
                 <Socials></Socials>
                 <div className="header flex justify-center align-center">
                     <div className="blue-square"></div>

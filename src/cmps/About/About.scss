@@ -2,12 +2,11 @@
 @import "../../assets/scss/setup/variables";
 @import "../../assets/scss/basics/typography";
 
-.about-me {
+.about-page {
   background-color: rgb(230, 218, 206);
   height: fit-content;
   padding-bottom: 50px;
   animation: 1s ease-out fadein;
-  height: 100%;
 
   .header {
     margin-bottom: 30px;
@@ -20,6 +19,12 @@
     h2 {
       font-family: poppins-bold;
       font-size: 35px;
+    }
+    @include for-normal-layout {
+      margin: 20px 0 15px 0;
+    }
+    @include for-tablet-layout {
+      margin: 5px 0 15px 0;
     }
   }
 
@@ -34,13 +39,36 @@
     padding: 20px;
     width: 800px;
     margin-bottom: 30px;
+    @include for-normal-layout {
+      width: 700px;
+    }
+    @include for-tablet-layout {
+      width: 570px;
+    }
+    @include for-narrow-layout {
+      width: 470px;
+    }
+    @include for-mobile-layout {
+      width: 370px;
+      padding: 10px 20px;
+    }
+    @include for-smallmobile-layout {
+      width: 330px;
+    }
 
     p {
       margin-bottom: 10px;
       line-height: 1.8;
+      @include for-normal-layout {
+        font-size: 16px;
+      }
+      @include for-mobile-layout {
+        font-size: 15px;
+      }
       span {
         font-family: avenir-semibold;
-        font-size: 1.2rem;
+        font-size: 20px;
+      
         &.skills {
           text-transform: capitalize;
         }
@@ -48,18 +76,5 @@
     }
   }
 
-  .socials-cmp {
-    align-self: flex-end;
-    margin: 35px 20px 0 0;
-    a {
-      margin: 0 15px;
-      font-size: 25px;
-      height: 30px;
-      transition: all ease-in-out .2s;
-      &:hover {
-        transform: scale(1.05);
-        color: white;
-      }
-    }
-  }
+
 }

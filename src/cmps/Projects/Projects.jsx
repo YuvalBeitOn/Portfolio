@@ -61,18 +61,18 @@ class Projects extends Component {
                 <p className="projects-desc">Some of my projects</p>
                 <ul className="projects-list clean-list flex column align-center justify-center">
                     {projects.map((project) => (
-                        <div className="project-container">
+                        <div className="project-container" key={project.name}>
                             <li
                                 className="project flex space-between"
-                                key={project.name}>
+                                >
                                 <div className="blue-line"></div>
                                 <div className="content">
                                     <h4>{project.name}</h4>
                                     <h5>{project.desc}</h5>
                                     <h6>({project.tools})</h6>
-                                    <a href={project.linkTo} className="proj-link">
+                                    <a href={project.linkTo} target="_blank" rel="noreferrer" className="proj-link">
                                         <span>Go to Project</span>
-                                        <i class="fas fa-arrow-right"></i>
+                                        <i className="fas fa-arrow-right"></i>
                                     </a>
                                 </div>
                                 {project.img && <img src={project.img} alt="project-img" />}

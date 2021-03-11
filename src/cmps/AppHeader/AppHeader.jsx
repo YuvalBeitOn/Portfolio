@@ -6,6 +6,14 @@ import './AppHeader.scss'
 
 class _AppHeader extends Component {
 
+    state = {
+        isMenuOpen: false
+    }
+
+    toggleNav = () => {
+        this.setState({ isMenuOpen: !this.state.isMenuOpen })
+    }
+
     render() {
         return (
             <header className="app-header flex space-between align-center">
@@ -15,7 +23,11 @@ class _AppHeader extends Component {
                     <p>/ FullStack | Frontend Developer</p>
                 </div>
                 <div className="right-side">
-                    <nav>
+                    <button onClick={this.toggleNav} className="bars">
+                        <i className="fas fa-bars"></i>
+                    </button>
+                    <nav className={"nav-bar flex align-center " + (this.state.isMenuOpen ? "showen" : null)}>
+                    <button className="close-btn" onClick={this.toggleNav}><i className="fas fa-times"></i></button>
                         <NavLink to="/" activeClassName="active-page" exact>
                             <span name="Home">HOME</span>
                         </NavLink>

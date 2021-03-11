@@ -6,15 +6,45 @@
   height: 80px;
   background-color: white;
   padding: 0 30px;
+  @include for-mobile-layout {
+    padding: 0 15px;
+  }
+  @include for-smallmobile-layout {
+    display: flex;
+    justify-content: center!important;
+  }
   .copyrights {
     font-family: avenir-thin;
     font-size: 15px;
+    @include for-narrow-layout {
+      width: 100px;
+      line-height: 25px;
+    }
+    @include for-mobile-layout {
+      font-size: 14px;
+    }
+    @include for-smallmobile-layout {
+      display: none;
+    }
+  
   }
   .contact {
     div {
       margin: 0 15px;
       font-size: 15px;
       letter-spacing: 0.5px;
+      @include for-narrow-layout {
+        margin: 0 8px;
+        font-size: 14px;
+      }
+      @include for-mobile-layout {
+        font-size: 13px;
+        margin: 0 3px;
+      }
+      @include for-smallmobile-layout {
+        font-size: 15px;
+        margin: 0 10px;
+      }
       span {
         font-family: avenir-semibold;
         margin-bottom: 8px;
@@ -26,13 +56,18 @@
       }
     }
 
-    .socials {
-      a {
-        margin: 0 8px;
-      }
+    .follow {
+      .socials {
+        a {
+          margin: 0 8px;
+        }
 
-      i {
-              font-weight: 100!important;
+        i {
+          font-weight: 100 !important;
+        }
+      }
+      @include for-tablet-layout {
+        display: none;
       }
     }
   }
