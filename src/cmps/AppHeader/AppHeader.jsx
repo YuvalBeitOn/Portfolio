@@ -19,7 +19,9 @@ class _AppHeader extends Component {
             <header className="app-header flex space-between align-center">
                 <div className="left-side flex align-center">
                     <div className="blue-square"></div>
-                    <h1><a href="/">Yuval Beit On</a></h1>
+                    <NavLink to="/" activeClassName="active-page" exact>
+                        <h1 name="Home">Yuval Beit On</h1>
+                    </NavLink>                    
                     <p>/ FullStack | Frontend Developer</p>
                 </div>
                 <div className="right-side">
@@ -27,7 +29,7 @@ class _AppHeader extends Component {
                         <i className="fas fa-bars"></i>
                     </button>
                     <nav className={"nav-bar flex align-center " + (this.state.isMenuOpen ? "showen" : null)}>
-                    <button className={"close-btn " + (this.state.isMenuOpen ? "showen" : null)} onClick={this.toggleNav}><i className="fas fa-times"></i></button>
+                        <button className={"close-btn " + (this.state.isMenuOpen ? "showen" : null)} onClick={this.toggleNav}><i className="fas fa-times"></i></button>
                         <NavLink to="/" activeClassName="active-page" exact>
                             <span name="Home">HOME</span>
                         </NavLink>
