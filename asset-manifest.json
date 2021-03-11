@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.a45ead1e.chunk.css",
+    "main.css": "/my-portfolio/static/css/main.88d5133b.chunk.css",
     "main.js": "/my-portfolio/static/js/main.73f699da.chunk.js",
     "main.js.map": "/my-portfolio/static/js/main.73f699da.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.b68eb43f.js",
@@ -10,7 +10,7 @@
     "static/js/3.ea548e7e.chunk.js": "/my-portfolio/static/js/3.ea548e7e.chunk.js",
     "static/js/3.ea548e7e.chunk.js.map": "/my-portfolio/static/js/3.ea548e7e.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "static/css/main.a45ead1e.chunk.css.map": "/my-portfolio/static/css/main.a45ead1e.chunk.css.map",
+    "static/css/main.88d5133b.chunk.css.map": "/my-portfolio/static/css/main.88d5133b.chunk.css.map",
     "static/js/2.5d6acd3b.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.5d6acd3b.chunk.js.LICENSE.txt",
     "static/media/AppFooter.scss": "/my-portfolio/static/media/Poppins-Bold.404e299b.ttf",
     "static/media/YuvalBeitOnCV.cd5f002e.docx": "/my-portfolio/static/media/YuvalBeitOnCV.cd5f002e.docx",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.b68eb43f.js",
     "static/js/2.5d6acd3b.chunk.js",
-    "static/css/main.a45ead1e.chunk.css",
+    "static/css/main.88d5133b.chunk.css",
     "static/js/main.73f699da.chunk.js"
   ]
 }
