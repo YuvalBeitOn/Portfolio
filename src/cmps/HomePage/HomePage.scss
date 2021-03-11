@@ -70,7 +70,7 @@
         font-size: 17px;
         text-align: center;
         letter-spacing: 3px;
-        width: 220px;
+        width: 225px;
         line-height: 25px;
       }
 
@@ -178,7 +178,7 @@
             color: #212121;
             padding: 8px 22.5px;
             @include for-tablet-layout {
-              padding: 8px 19px;
+              padding: 8px 18px;
             }
 
             &:hover {
