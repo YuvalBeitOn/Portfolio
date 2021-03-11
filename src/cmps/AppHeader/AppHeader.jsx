@@ -27,7 +27,7 @@ class _AppHeader extends Component {
                         <i className="fas fa-bars"></i>
                     </button>
                     <nav className={"nav-bar flex align-center " + (this.state.isMenuOpen ? "showen" : null)}>
-                    <button className="close-btn" onClick={this.toggleNav}><i className="fas fa-times"></i></button>
+                    <button className={"close-btn " + (this.state.isMenuOpen ? "showen" : null)} onClick={this.toggleNav}><i className="fas fa-times"></i></button>
                         <NavLink to="/" activeClassName="active-page" exact>
                             <span name="Home">HOME</span>
                         </NavLink>
