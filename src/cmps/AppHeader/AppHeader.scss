@@ -15,12 +15,15 @@
       margin-right: 8px;
     }
 
-    h1 {
-      font-family: avenir-bold;
-      margin-right: 30px;
-      @include for-narrow-layout {
-        font-size: 25px;
-        margin-right: 15px;
+    a {
+      h1 {
+        min-width: 210px;
+        font-family: avenir-bold;
+        margin-right: 30px;
+        @include for-narrow-layout {
+          font-size: 25px;
+          margin-right: 15px;
+        }
       }
     }
 
