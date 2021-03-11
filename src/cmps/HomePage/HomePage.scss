@@ -148,21 +148,16 @@
             border: 1px solid transparent;
             margin-right: 5px;
             padding: 8px 30px;
+             color: white;
             @include for-tablet-layout {
               padding: 8px 25px;
             }
-
-            span {
-              width: 130px;
-            }
-            
             &:hover {
               background-color: transparent;
               border: 1px solid black;
-              a {
-                font-family: avenir-semibold;
-                color: #212121;
-              }
+              font-family: avenir-semibold;
+              color: #212121;
+           
             }
             a {
               font-size: 14px;
