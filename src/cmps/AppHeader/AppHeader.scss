@@ -6,6 +6,11 @@
   height: 100px;
   background-color: white;
   padding: 20px;
+  @include for-narrow-layout {
+    font-size: 25px;
+    height: 80px;
+    border: 1px solid rgba(0,0,0,0.15);
+  }
   .left-side {
     min-width: 210px;
     .blue-square {
