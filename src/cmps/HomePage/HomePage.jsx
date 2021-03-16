@@ -10,7 +10,7 @@ class _HomePage extends Component {
         return (
             <section className="home-page flex justify-center align-center">
                 <div className="inner-square flex ">
-                    <div className="about-me flex column align-center">
+                    <div className="about-me flex column align-center" data-aos="flip-left" data-aos-duration="1200">
                         <img src={me} alt="my photo"></img>
                         <h1>Yuval Beit On</h1>
                         <div className="seperator"></div>
@@ -29,7 +29,7 @@ class _HomePage extends Component {
                             </a>
                         </div>
                     </div>
-                    <div className="left-side flex column justify-center">
+                    <div className="left-side flex column justify-center" data-aos="flip-right" data-aos-duration="1200">
                         <p className="hello">Hello</p>
                         <p className="sec-p">Here's who I am & what I do</p>
                         <div className="btns-container">

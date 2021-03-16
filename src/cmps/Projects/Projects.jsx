@@ -7,7 +7,6 @@ import musix from '../../assets/img/app-img/musix.png';
 import appsus from '../../assets/img/app-img/appsus.png';
 import misterToy from '../../assets/img/app-img/misterToy.png';
 import misterBitcoin from '../../assets/img/app-img/misterBitcoin.png';
-
 class Projects extends Component {
     state = {
         projects: [
@@ -61,10 +60,11 @@ class Projects extends Component {
                 <p className="projects-desc">Some of my projects</p>
                 <ul className="projects-list clean-list flex column align-center justify-center">
                     {projects.map((project) => (
-                        <div className="project-container" key={project.name}>
+                        <div className="project-container" key={project.name} data-aos="zoom-in" data-aos-duration="1500"
+                        >
                             <li
                                 className="project flex space-between"
-                                >
+                            >
                                 <div className="blue-line"></div>
                                 <div className="content">
                                     <h4>{project.name}</h4>

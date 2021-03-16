@@ -10,11 +10,11 @@ class About extends Component {
         return (
             <section className="about-page flex column justify-center align-center">
                 <Socials></Socials>
-                <div className="header flex justify-center align-center">
+                <div className="header flex justify-center align-center" data-aos="zoom-in" data-aos-duration="1200">
                     <div className="blue-square"></div>
                     <h2>About Me</h2>
                 </div>
-                <div className="main-text flex justify-center column wrap">
+                <div className="main-text flex justify-center column wrap" data-aos="zoom-in" data-aos-duration="1200">
                     <p>
                         <span className="hi">Hi,</span> My name is Yuval, I'm 24 years old, from Israel.
 							</p>
